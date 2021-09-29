@@ -1,22 +1,24 @@
 html {
-    /* max-width: 100vw; */
+    height: 100%;
 }
 
 
 body {
     text-align: center;
     color: #335B96;
-    /* max-width: 100% */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.appMain {
-    margin-top: 50px;
+form label h4 {
+    margin-bottom: 5px;
 }
 
 form input {
 
 display: block;
-margin: 20px auto;
+margin: 10px auto;
 padding: 10px 20px;
 border: 2px solid tan;
 border-radius: 10px;
@@ -36,7 +38,7 @@ button {
     display: none;
     
 }
-.case-counter {
+.cash-counter {
     position: relative;
     margin-top: -64px;
     z-index: -1;
@@ -67,11 +69,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;  
-    /* z-index: 1;  */
     font-weight: bold;
-    /* position: relative; */
-   
-
 
 }
 
@@ -82,8 +80,6 @@ button {
 .change-quantity{
     display: flex;   
     justify-content: center;
-    /* top: -32px; */
-    /* position: relative; */
     
 }
 
@@ -120,4 +116,23 @@ button {
     display: none;
     margin: 0px auto;
 }
+
+
+footer {
+    margin-top: auto;
+    padding: 5px 0px;
+    /* display: flex; */
+
+}
+
+footer ul {
+    list-style-type: none;
+    margin: -20px auto 5px auto;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+}
+
 
