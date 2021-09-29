@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    color: #335B96;
+}
+/* 
+form {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align:center
+} */
+
+form input {
+
+display: block;
+margin: 20px auto;
+padding: 10px 20px;
+border: 2px solid tan;
+border-radius: 10px;
+
+}
+
+#submit-button {
+    background-color: tan;
+    color: inherit;
+    padding: 5px 20px;
+    font-weight: bold;
+    border: 2px solid tan;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.main-container{
+    display: none;
+    
+}
+.case-counter {
+    position: relative;
+    margin-top: -64px;
+    z-index: -1;
+
+    
+}
+
+#handle {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+   background-color: burlywood;
+   color: burlywood;
+   border: 2px solid tan;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.cash-change{
+    border: 1px solid gray;
+    padding: 5px;
+    width: 50px;
+    height: 20px;
+    background-color: blanchedalmond;
+}
+
+.cash-register{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    z-index: 1; 
+    /* overflow: hidden; */
+    position: relative;
+   
+
+
+}
+
+.change-quantity .cash-change {
+    border-top: 0px;
+}
+
+.change-quantity{
+    display: flex;   
+    justify-content: center;
+    /* top: -32px; */
+    position: relative;
+    
+}
+
+@keyframes openCounter {
+    0% {margin-top: -64px}
+    100%{margin-top: 0px}
+}
+
+#cash-container {
+    background-color: burlywood;
+    width: 435px;
+    height: 64px;
+    margin: 0px auto;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    line-height: 64px;
+    border: 2px solid tan;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
