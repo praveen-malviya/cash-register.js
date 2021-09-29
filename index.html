@@ -9,16 +9,18 @@
 </head>
 <body>
     
+    <div class="appMain">
     <h1>Case Register App</h1>
     <p> Get the Minimum Number of notes that you should return </p>
     <form action="">
-    <label for="">Bill Amount</label>
-    <input type="text" id="billAmount">
+    <label for=""><h4>Bill Amount</h4></label>
+    <input type="number" id="billAmount">
     <!-- <button>Next</button> -->
-    <label for="">Cash Given</label>
-    <input type="text" id="cashAmount">
+    <label for=""><h4>Cash Given</h4></label>
+    <input type="number" id="cashAmount">
 </form>
     <button id="submit-button" onclick="getChange()">Get Change</button>
+    <button id="reload-button" onclick="window.location.reload()">Try again</button>
 
     <h3 id="showMessage"></h3>
 
@@ -51,6 +53,8 @@
 </div>
 
 
+
+</div>
     <script src="script.js"></script>
 </body>
 </html>

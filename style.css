@@ -8,14 +8,10 @@ body {
     color: #335B96;
     /* max-width: 100% */
 }
-/* 
-form {
-    display: flex;
-    flex-direction: column;
 
-    justify-content: center;
-    text-align:center
-} */
+.appMain {
+    margin-top: 50px;
+}
 
 form input {
 
@@ -27,7 +23,7 @@ border-radius: 10px;
 
 }
 
-#submit-button {
+button {
     background-color: tan;
     color: inherit;
     padding: 5px 20px;
@@ -51,9 +47,9 @@ border-radius: 10px;
 #handle {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-   background-color: burlywood;
-   color: burlywood;
-   border: 2px solid tan;
+    background-color: burlywood;
+    color: burlywood;
+    border: 2px solid tan;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -65,13 +61,15 @@ border-radius: 10px;
     background-color: blanchedalmond;
 }
 
+
+
 .cash-register{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;  
-    z-index: 1; 
-    /* overflow: hidden; */
-    position: relative;
+    /* z-index: 1;  */
+    font-weight: bold;
+    /* position: relative; */
    
 
 
@@ -85,7 +83,7 @@ border-radius: 10px;
     display: flex;   
     justify-content: center;
     /* top: -32px; */
-    position: relative;
+    /* position: relative; */
     
 }
 
@@ -105,5 +103,21 @@ border-radius: 10px;
     line-height: 64px;
     border: 2px solid tan;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #cash-container {
+        width: 296px;
+    }
+    .cash-change{
+        width: 30px;
+    }
+    
+}
+
+#reload-button {
+    display: none;
+    margin: 0px auto;
 }
 

@@ -90,8 +90,9 @@ document.getElementById("tenNote").innerHTML= tenNote;
 document.getElementById("fiveNote").innerHTML= fiveNote;
 document.getElementById("oneNote").innerHTML= oneNote;
 
-document.getElementsByClassName("main-container")[0].style.display = "block"
-document.getElementsByClassName("case-counter")[0].style.animation = "openCounter 2s linear forwards 1s"
+document.getElementsByClassName("main-container")[0].style.display = "block";
+document.getElementsByClassName("case-counter")[0].style.animation = "openCounter 2s linear forwards 1s";
+document.getElementById("reload-button").style.display = "block";
 
 }
 }
