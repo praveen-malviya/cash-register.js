@@ -1,6 +1,12 @@
+html {
+    /* max-width: 100vw; */
+}
+
+
 body {
     text-align: center;
     color: #335B96;
+    /* max-width: 100% */
 }
 /* 
 form {
