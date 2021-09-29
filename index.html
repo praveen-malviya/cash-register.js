@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Cash Register</title>
@@ -7,59 +8,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
+
 <body>
-    
+
     <div class="appMain">
-    <h1>Cash Register App</h1>
-    <h4> Get the Minimum Number of notes that you should return </h4>
-    <form action="">
-    <label for=""><h4>Bill Amount</h4></label>
-    <input type="number" id="billAmount">
-    <!-- <button>Next</button> -->
-    <label for=""><h4>Cash Given</h4></label>
-    <input type="number" id="cashAmount">
-</form>
-    <button id="submit-button" onclick="getChange()">Get Change</button>
-    <button id="reload-button" onclick="window.location.reload()">Try again</button>
+        <h1>Cash Register App</h1>
+        <h4> Get the Minimum Number of notes that you should return </h4>
+        <form action="">
+            <label for="">
+                <h4>Bill Amount</h4>
+            </label>
+            <input type="number" id="billAmount">
+            <label for="">
+                <h4>Cash Given</h4>
+            </label>
+            <input type="number" id="cashAmount">
+        </form>
+        <button id="submit-button" onclick="getChange()">Get Change</button>
+        <button id="reload-button" onclick="window.location.reload()">Try again</button>
 
-    <h3 id="showMessage"></h3>
+        <h3 id="showMessage"></h3>
 
 
-    <div class="main-container">
-    <h3>You've got a change in me </h3>
-    <div id="cash-container">Cash Counter</div>
-    <div class="cash-counter">
-        
-    <div class= "cash-register">    
-        <span class="cash-change">2K</span>
-        <span class="cash-change">500</span>
-        <span class="cash-change">100</span>
-        <span class="cash-change">20</span>
-        <span class="cash-change">10</span>
-        <span class="cash-change">5</span>
-        <span class="cash-change">1</span>
-</div>
-<div class="change-quantity">
-        <span class="cash-change" id="twoThousandNote"></span>
-        <span class="cash-change" id="fiveHundredNote"></span>
-        <span class="cash-change" id="oneHundredNote"></span>
-        <span class="cash-change" id="twentyNote"></span>
-        <span class="cash-change" id="tenNote"></span>
-        <span class="cash-change" id="fiveNote"></span>
-        <span class="cash-change" id="oneNote"></span>
+        <div class="main-container">
+            <h3>You've got a change in me </h3>
+            <div id="cash-container">Cash Counter</div>
+            <div class="cash-counter">
+
+                <div class="cash-register">
+                    <span class="cash-change">2K</span>
+                    <span class="cash-change">500</span>
+                    <span class="cash-change">100</span>
+                    <span class="cash-change">20</span>
+                    <span class="cash-change">10</span>
+                    <span class="cash-change">5</span>
+                    <span class="cash-change">1</span>
+                </div>
+                <div class="change-quantity">
+                    <span class="cash-change" id="twoThousandNote"></span>
+                    <span class="cash-change" id="fiveHundredNote"></span>
+                    <span class="cash-change" id="oneHundredNote"></span>
+                    <span class="cash-change" id="twentyNote"></span>
+                    <span class="cash-change" id="tenNote"></span>
+                    <span class="cash-change" id="fiveNote"></span>
+                    <span class="cash-change" id="oneNote"></span>
+                </div>
+                <span id="handle"> ~.~ </span>
+            </div>
+        </div>
     </div>
-    <span id="handle"> ~.~ </span>
-</div>
-</div>
-</div>
-<footer> 
-    <h5>© | 2021 | Praveen Malviya</h5>
-    <ul>
-        <li><a href="https://github.com/praveen-malviya"><img src="/images/github.svg"/></a></li>
-        <li><a href="https://www.linkedin.com/in/mpraveen07"><img src="/images/linkedin.svg" alt=""></a></li>
-        <li><a href="https://www.instagram.com/pra_veen.m"><img src="/images/instagram.svg" alt=""></a></li>
-    </ul> 
-</footer>
+    <footer>
+        <h5>© | 2021 | Praveen Malviya</h5>
+        <ul>
+            <li><a href="https://github.com/praveen-malviya"><img src="/images/github.svg" /></a></li>
+            <li><a href="https://www.linkedin.com/in/mpraveen07"><img src="/images/linkedin.svg" alt=""></a></li>
+            <li><a href="https://www.instagram.com/pra_veen.m"><img src="/images/instagram.svg" alt=""></a></li>
+        </ul>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
