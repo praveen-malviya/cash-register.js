@@ -1,12 +1,14 @@
-var twoThousandNote = 0;
-var fiveHundredNote = 0;
-var oneHundredNote = 0;
-var twentyNote = 0;
-var tenNote = 0;
-var fiveNote = 0;
-var oneNote = 0;
+
 
 var getChange = function () {
+  var twoThousandNote = 0;
+  var fiveHundredNote = 0;
+  var oneHundredNote = 0;
+  var twentyNote = 0;
+  var tenNote = 0;
+  var fiveNote = 0;
+  var oneNote = 0;
+
   var billAmount = document.getElementById("billAmount").value;
   var cashAmount = document.getElementById("cashAmount").value;
   document.getElementById("showMessage").innerHTML = "";
@@ -19,7 +21,6 @@ var getChange = function () {
     document.getElementById("showMessage").innerHTML =
       "Are you Trying to rob me man? Give Me More";
   } else {
-    document.getElementById("submit-button").style.display = "none";
     while (changeAmount >= "2000") {
       changeAmount = changeAmount - 2000;
       twoThousandNote++;
@@ -63,6 +64,5 @@ var getChange = function () {
       "block";
     document.getElementsByClassName("cash-counter")[0].style.animation =
       "openCounter 2s linear forwards 1s";
-    document.getElementById("reload-button").style.display = "block";
   }
 };
