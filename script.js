@@ -17,10 +17,7 @@ var getChange = function () {
       "We don't owe you anything";
   } else if (changeAmount <= 0) {
     document.getElementById("showMessage").innerHTML =
-      "Are you Trying to robe me man? Give More";
-  } else if (billAmount == cashAmount) {
-    document.getElementById("showMessage").innerHTML =
-      "Hasta la vista baby! we are done";
+      "Are you Trying to rob me man? Give Me More";
   } else {
     document.getElementById("submit-button").style.display = "none";
     while (changeAmount >= "2000") {
