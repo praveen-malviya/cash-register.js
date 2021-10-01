@@ -13,6 +13,8 @@ var getChange = function () {
   var cashAmount = document.getElementById("cashAmount").value;
   document.getElementById("showMessage").innerHTML = "";
   var changeAmount = cashAmount - billAmount;
+  document.getElementsByClassName("main-container")[0].style.display =
+  "none";
 
   if (changeAmount == 0) {
     document.getElementById("showMessage").innerHTML =
