@@ -16,9 +16,10 @@ var getChange = function () {
   document.getElementsByClassName("main-container")[0].style.display =
   "none";
 
+  if(!(billAmount < 0)){
   if (changeAmount == 0) {
     document.getElementById("showMessage").innerHTML =
-      "We don't owe you anything";
+      "We Don't Owe You Anything";
   } else if (changeAmount <= 0) {
     document.getElementById("showMessage").innerHTML =
       "Are you Trying to rob me man? Give Me More";
@@ -67,4 +68,9 @@ var getChange = function () {
     document.getElementsByClassName("cash-counter")[0].style.animation =
       "openCounter 2s linear forwards 1s";
   }
+}
+else{
+  document.getElementById("showMessage").innerHTML =
+      `Looks Like Negative Value Which Can't Be P ossible`;
+}
 };
